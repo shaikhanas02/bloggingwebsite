@@ -7,6 +7,13 @@
 body{
   background-color: black;
 }
+
+#addbtn{
+  background-color: black;
+    color: white ;
+    border: 1px solid white ;
+    padding : 5px 10px  ;
+}
 .navbar{
     width: 100% ; 
     display: flex ;
@@ -15,14 +22,27 @@ body{
     padding: 10px ;
     color: white ;
     background-color: black;
-
 }
-#addbtn{
-  background-color: black;
+.add-box{
+    background-color: black;
+  }
+  .note{
+    
+    background-color: black;
     color: white ;
-    border: 1px solid white ;
-    padding : 5px 10px  ;
-}
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 97% ;
+    height: 200px ;
+    border: 1px solid white  ;
+    margin: 18px ;
+    padding: 10px ;
+  }
+  .note .details{
+    max-height: 365px;
+    overflow-y: auto;
+  }
 .popup-box{
     position: fixed;
     top: 0;
@@ -122,26 +142,7 @@ body{
     margin: 2px ;
     margin-bottom: 10px ;
   }
-  .add-box{
-    background-color: black;
-  }
-  .note{
-    
-    background-color: black;
-    color: white ;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 97% ;
-    height: 200px ;
-    border: 1px solid white  ;
-    margin: 18px ;
-    padding: 10px ;
-  }
-  .note .details{
-    max-height: 365px;
-    overflow-y: auto;
-  }
+  
   @media (max-width: 660px){
     .add-box{
       margin: 15px;
